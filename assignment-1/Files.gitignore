@@ -1,0 +1,5 @@
+# ignore all logs
+*.log
+
+# ignore README file
+README.md
