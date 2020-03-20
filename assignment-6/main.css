@@ -1,0 +1,107 @@
+ .editordiv {
+    height: 500px;
+    width: 650px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+
+}
+
+.toolbardiv {
+    height: 50px;
+    width: 650px;
+    overflow: hidden;
+
+}
+
+.toolbardivone {
+    height: 40px;
+    margin: 10px 0 0 10px;
+    width: 15px;
+    background-color: white;
+    float: left;
+}
+
+.toolbardivtwo {
+    height: 40px;
+    margin: 10px 0 0 10px;
+    width: 15px;
+    margin-left: 25px;
+    float: left;
+    background-color: white;
+}
+
+.toolbardivthree {
+    height: 40px;
+    margin: 10px 0 0 10px;
+    width: 15px;
+    margin-left: 25px;
+    float: left;
+    background-color: white;
+}
+
+.toolbardivfour {
+    height: 40px;
+    margin: 10px 0 0 10px;
+    width: 15px;
+    margin-left: 25px;
+    float: left;
+    background-color: white;
+}
+
+.toolbardivfive {
+    height: 40px;
+    margin: 10px 0 0 10px;
+    width: 15px;
+    margin-left: 25px;
+    float: left;
+    background-color: white;
+}
+
+.toolbardivsix {
+    height: 40px;
+    margin: 10px 0 0 10px;
+    width: 15px;
+    margin-left: 25px;
+    float: left;
+    background-color: white;
+}
+
+.bold-text {
+    font-weight:bold;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
+
+.align-text-left {
+    text-align: left;
+}
+
+.align-left {
+    height: 500px;
+    width: 650px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    text-align: left;
+}
+
+.align-right {
+    height: 500px;
+    width: 650px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    text-align: right;
+}
+
+.align-justify {
+    height: 500px;
+    width: 650px;
+    background-color: antiquewhite;
+    border: 2px solid black;
+    text-align: justify;
+}

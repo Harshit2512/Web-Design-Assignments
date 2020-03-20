@@ -1,0 +1,209 @@
+
+/* Grid for Heading part of Page*/
+.header {
+      display: grid;
+      grid-template-columns: 650px 650px;
+      grid-template-rows: 20px;
+      grid-gap: 1em;
+      justify-items: center;
+}
+
+.head {
+    background-color: white;
+}
+
+.s1 {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      color: $grayfont;
+      font-size: $fontThirteen;
+
+}
+
+.s2 {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      color: $grayfont;
+      font-size: $fontThirteen;
+}
+
+/* Grid for the Horizantal menu using nav */
+.menu {
+      display: grid;
+      grid-template-columns: 335px auto;
+      grid-template-rows: 50px;
+      grid-gap: 2px;
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;    
+      background-color: white;
+
+}
+
+/* Grid for the Horizantal menu using nav */
+.partOne {
+      grid-column: 1 / 2;
+      grid-row: 1 / 2;
+      justify-self: end;
+      align-self: center;
+      font-size: 22px;
+      color: #74bdb2;
+      font-family: "Frutiger Neue W02 Book",Arial,Helvetica,sans-serif;
+      position: sticky;
+}
+
+/* Grid for the Horizantal menu using nav */
+.partTwo {
+      grid-column: 2 / 3;
+      grid-row: 1 / 2;
+      align-self: auto;  
+      position: sticky;
+}
+
+/* Grid for'Why choose Us' section */
+.chooseUspart {
+      display: grid;
+      grid-template-columns: 260px 260px 260px 260px 260px;
+      grid-template-rows: 90px 300px;
+    
+      
+  }
+  
+  /* Grid for 'Why chooseUs heading section'*/
+  .chooseUs-heading {
+      grid-column: 1 / 6;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      font-size: 26px;
+      color: #74bdb2;
+      font-family: "Frutiger Neue W02 Book",Arial,Helvetica,sans-serif;
+  }
+
+   /* Grid for 'Why chooseUs heading section'*/
+  .choose-one {
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin: 30px 30px 30px 30px;
+      
+    }
+
+.chooseUs {
+      background-color: white;
+  }
+  
+  .heading {
+      grid-column: 1 / 6;
+      grid-row: 1 / 2;
+      align-self: center;
+      justify-self: center;
+      font-size: 26px;
+      color: #74bdb2;
+      font-family: "Frutiger Neue W02 Book",Arial,Helvetica,sans-serif;
+  
+  }
+  
+  .chooseUsone {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    line-height: 40px;
+    justify-self: center;
+    text-align: center;
+    background: #74bdb2;
+    margin: 10px 10px 10px 10px;
+  }
+
+
+  /* Grisfor Cleaning services section */
+  .CService {
+      display: grid;
+      grid-template-columns: 220px 220px 220px 220px 220px 220px;
+      grid-template-rows: 120px 280px 120px;  
+      background-color: rgb(248, 246, 246);
+  }
+
+  /* Grid for About Company section*/
+  .aboutCom {
+      display: grid;
+      grid-template-columns: 650px 650px;
+      grid-template-rows: 575px; 
+  }
+
+  /* Grid for Discount section*/
+  .discount {
+        display: grid;
+        grid-template-rows: 150px;
+        grid-template-columns: 850px 450px;
+        background-color: #74bdb2;
+  }
+
+  .discountText {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+        align-self: center;
+        font-size: 24px;
+        color: white;
+        justify-self: right;
+        margin-right: 30px;
+  }
+
+  /* Grid for Team section*/
+  .team {
+      display: grid;
+      grid-template-rows: 150px 275px;
+      grid-template-columns: 260px 260px 260px 260px 260px;
+      
+  }
+
+  /* Grid for Price Table section*/
+  .priceTable {
+      display: grid;
+      grid-template-rows: 150px 270px 40px;
+      grid-template-columns: 220px 180px 180px 180px 180px 220px;
+      background-color: rgb(248, 246, 246);
+      column-gap: 15px;
+  }
+
+  .LatestBlog {
+      display: grid;
+      grid-template-rows: 100px 400px;
+      grid-template-columns: 270px 240px 240px 240px 270px;
+      background-color:white;
+      column-gap: 15px;
+  }
+
+  /* Grid for Testimonial section*/
+  .testimonial {
+        display:grid;
+        grid-template-rows: 100px 150px 200px;
+        grid-template-columns: 350px 600px 350px;
+        background-color: rgb(245, 243, 243);
+  }
+
+  /* Grid for Project section*/
+  .imageSlider {
+        display: grid;
+        grid-template-columns: 325px 325px 325px 355px;
+        grid-template-rows: 180px;
+  }
+
+  /* Grid for Quote section*/
+  .Quote {
+        display: grid;
+        grid-template-columns: 660px 660px;
+        grid-template-rows: 500px;
+        background-image: url(../images/quote.jpg);
+        background-color: antiquewhite;
+        margin-top: 2px;
+  }
+
+  /* Grid for footer section*/
+  .pageFooter {
+        display: grid;
+        grid-template-columns: 230px 260px 150px 150px 150px 230px;
+        grid-template-rows: 250px;
+        column-gap: 20px;
+  }

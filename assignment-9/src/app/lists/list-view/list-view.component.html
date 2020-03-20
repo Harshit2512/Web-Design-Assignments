@@ -1,0 +1,25 @@
+<div class="list-item" *ngFor="let item of lists; let i = index;">
+        <hr>
+    <!--HTML elements for showing items and marking as completed and deletion-->
+    <div>
+            <input
+            (change)="onToggle(item)"
+            type="checkbox"
+            id="{{ item.id }}"
+            [checked]="item.completed"
+          />
+        <a>ToDo Title : <b>{{item.title}}</b></a>&nbsp;
+        <button id = "{{item._id}}" (click)="toggleShow(i)" type="checkbox" >show</button>
+        <button id = "{{item._id}}" (click)="deleteTodo(item)" type="checkbox" >Delete</button><br><br>
+    </div>
+
+    <div *ngIf="showBtn===i" class="row container-fluid"  [attr.id]="'undoBtn'+i" >
+            <!--<p>ID : {{ item._id }}</p>-->
+            <!--<p>Status : {{ item.status }}</p>-->
+            <p>Description : {{ item.desc }}</p>
+            <p>Due Date : {{ item.dueDate }}</p>
+            <!--<p>Modified date : {{ item.modifiedDate}}</p>
+            <p>Created Date : {{ item.createdDate }}</p>-->
+                       
+    </div><hr>
+  </div>

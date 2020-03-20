@@ -1,0 +1,223 @@
+/* CSS to provide style to main heading with  Righteous font family using Google library and class selector */
+.headingFont {
+        font-size: 35px;
+        font-family: 'Righteous', cursive;
+        font-weight: bold;
+        margin-top: 25px;
+        margin-bottom: 10px;
+        margin-right: 150px;
+        margin-left: 80px;
+    }
+
+/* To style heading line using class selector */
+.headingLine {
+        font-size: 17px;
+        font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-right: 150px;
+        margin-left: 80px;
+    }
+
+/* To style third line name "All Post" using margin and padding with CSS */
+.allPostLine {
+        font-size: 20px;
+            font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            font-weight: bold;
+            margin: 10px 135px 10px 80px;
+            margin-bottom: 0px;
+            padding-bottom: 18px;
+}
+
+/* To provide space between text and underline using padding */
+.underline {
+    bottom-padding: 15px;
+}
+
+/* To create upper container to accomodate first three divs providing height and width */
+.containerOne {
+        float: left;
+        margin-left: 60px;
+        width: 1200px;
+        height: 180px;
+}
+
+/* Div class selector to provide CSS to first box of container */
+/* Use of margins to provide spaces, border radius to provide curvature, and position as relative to accomodate text and bookmark content within it*/
+.firstUpper {
+        float: left;
+        margin: 15px 0 0 20px;
+        width: 350px;
+        height: 215px;
+        border-radius: 3px;
+        border: 2px solid #eee;
+        border-width: thin;
+        position: relative;
+        padding-bottom: 5px;
+    }
+/* To provide CSS to div text heading with margin and bold text*/
+.firstUpperContentHeading {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 20px;
+        margin: 15px 0 0 15px;
+        font-weight: bold;
+}
+
+/* To provide CSS to div text content with margin, bold text with gray color*/
+.firstUpperContentText {
+        font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+        font-size: 15px;
+        margin: 15px 15px 0 15px;
+        color: gray;
+}
+
+/* Div class selector to provide CSS to second box of container */
+/* Use of margins to provide spaces, border radius to provide curvature, and position as relative to accomodate text and bookmark content within it*/
+.secondUpper {
+        float: left;
+        margin: 15px 0 0 30px;
+        border-width: thin;
+        width: 350px;
+        height: 215px;
+        position: relative;
+        padding-bottom: 5px;
+        border-radius: 3px;
+        border: 1px solid #eee;
+    }
+
+/* Class selector to provide part of text with Green color */
+.textColor {
+        color: #00AB6B;
+}
+
+/* element + element selector : Selects all <span> elements that are placed immediately after <p> elements */
+p + span {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	margin: 0 0 30px 15px;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 13px;
+    color: gray;
+}
+
+/* Div class selector to provide CSS to third box of container */
+/* Use of margins to provide spaces, border radius to provide curvature, and position as relative to accomodate text and bookmark content within it*/
+.thirdUpper {
+        float: left;
+        margin: 15px 0 0 30px;
+        border-radius: 3px;
+        border: 1px solid #eee;
+        border-width: thin;
+        width: 350px;
+        height: 215px;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+/* To create lower container to accomodate last two divs providing height and width */
+.containerTwo {
+        float: left;
+        margin-left: 60px;
+        width: 1200px;
+        height: 180px;
+        margin-top: 70px;
+}
+
+/* Div class selector to provide CSS to first box of container */
+/* Use of margins to provide spaces, border radius to provide curvature, and position as relative to accomodate text and bookmark content within it*/
+.firstLower {
+        float: left;
+        margin: 15px 0 0 20px;
+        width: 350px;
+        height: 210px;
+        border-radius: 3px;
+        border: 1px solid #eee;
+        border-width: thin;
+        position: relative;
+        padding-bottom: 5px;
+
+    }
+
+/* Div class selector to provide CSS to second box of container */
+/* Use of margins to provide spaces, border radius to provide curvature, and position as relative to accomodate text and bookmark content within it*/
+.secondLower {
+        float: left;
+        margin: 15px 0 0 30px;
+        border-radius: 3px;
+        border: 1px solid #eee;
+        border-width: thin;
+        width: 350px;
+        height: 210px;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+/* Div class selector to provide CSS to third box of container */
+/* Use of margins to provide spaces, border radius to provide curvature, and position as relative to accomodate text and bookmark content within it*/
+.thirdLower {
+        float: left;
+        margin: 15px 0 0 30px;
+        border-radius: 3px;
+        border: 1px solid #eee;
+        border-width: thin;
+        width: 350px;
+        height: 210px;
+        position: relative;
+        padding-bottom: 5px;
+    }
+
+/* To provide CSS to <ul> unordered list  */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: white;
+}
+
+li {
+  float: left;
+}
+
+/* To select all <a> elements inside <li> element */
+/* Use of padding and text-align properties to accomodate navigation text*/
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 1px 5px;
+  text-decoration: none;
+}
+
+
+a {
+    text-decoration: none;
+    position: relative;
+}
+
+/* Use of pseudo class selector to provide CSS to line after <a> element */
+/* Use of (%) to  provide width size */
+a:after {
+    content: '';
+    width: 100%;
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    border-width: 0 0 1px;
+    border-style: solid;
+}
+
+ /* For Font size of bookmark icon */
+ .fa {
+      font-size: 20px;
+       }
+
+    /*  CSS for <hr> to provide CSS effect to line in given picture */
+ div hr {
+    display: block;
+    border-style: inset;
+    border-width: 0.5px;
+    color: #eee;
+    margin: 0 135px 0 80px;
+}

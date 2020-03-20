@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Assignment3</title>
+    <!-- Use of <link> to import external CSS file i.e main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Use of <link> to import external CSS for bookmark -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Font library -->
+    <link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Use of <div> tag to create layout container of the HTML page-->
+    <div class="container">
+
+        <!-- <div> with <h1> to provide Heading text of HTML page-->
+        <!-- External CSS using class selector to provide CSS effect to heading -->
+        <div>
+            <h1 class="headingFont">Mediumish</h1>
+        </div>
+
+        <!-- <div> with <p> to provide Heading of HTML page-->
+        <!-- External CSS using class selector to provide CSS effect to heading -->
+        <div>
+            <p class="headingLine">the clean blog!</p>
+        </div>
+
+        <!-- Use of <nav> tag to provide horizontal navigation of menu in HTML page-->
+        <nav>
+        <div>
+            <!-- Use of <ul> and <li> to provide horizontal navigation list-->
+            <ul>
+                <!-- class selector to provide CSS effect to menu -->
+            <li><a class="allPostLine" href="">All Posts</a></li>
+            </ul>
+            <hr class="line">
+        </div>
+        </nav>
+
+        <!-- Create container to accomodate upper three div in a row-->
+        <!-- External CSS using class selector to provide CSS effect to heading -->
+        <div class="containerOne">
+            <!-- <div> to accomodate first portion of upper row-->
+            <div class="firstUpper">
+
+                <!-- Use to <p> to provide heading and text of first div -->
+                <p class="firstUpperContentHeading">Markdown Syntax Guide</p>
+                <p class="firstUpperContentText">This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether
+                basic HTML elements are decorated with CSS in a Hugo theme.</p>
+
+                <!-- Use of <span> to font awesome to provide bookmark icon-->
+                <span class="bookmark">
+                Mar 11, 2019 - 3 min read &nbsp;<i class="fa">&#xf097;</i>
+            </span>
+            </div>
+
+            <!-- <div> to accomodate second portion of upper row-->
+            <div class="secondUpper">
+                <!-- Use to <p> to provide heading and text of first div -->
+                <p class="firstUpperContentHeading">Rich Content</p>
+                <p class="firstUpperContentText">Hugo ships with several <span class="textColor"><b>Built-in Shortcodes</b></span> for rich content, along with a <span class="textColor"><b>Privacy
+                    Config</b></span> and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.</p>
+                <!-- Use of <span> and font awesome library font awesome to provide bookmark icon-->
+            <span class="bookmark">
+                Mar 10, 2019 - 1 min read &nbsp;<i class="fa">&#xf097;</i>
+            </span>
+            </div>
+
+            <!-- <div> to accomodate first portion of upper row-->
+            <div class="thirdUpper">
+                <!-- Use to <p> to provide heading and text of first div -->
+                <p class="firstUpperContentHeading">Placeholder Text</p>
+                <p class="firstUpperContentText">Lorem est tota propiore conpellat pectoribus de pectora summo.</p>
+                <!-- Use of <span> to font awesome to provide bookmark icon-->
+                <span class="bookmark">
+                Mar 9, 2019 - 2 min read &nbsp;<i class="fa">&#xf097;</i>
+            </span>
+            </div>
+        </div>
+
+        <!-- Create container to accomodate lower two div in a row-->
+        <!-- External CSS using class selector to provide CSS effect to heading -->
+        <div class="containerTwo">
+            <!-- <div> to accomodate first portion of lower row-->
+            <div class="firstLower">
+                <p class="firstUpperContentHeading">Math Typesetting</p>
+                <p class="firstUpperContentText">Mathematical notation ina Hugo project can be enabled by using third party JavaScript
+                libraries.</p>
+                <!-- Use of <span> to font awesome to provide bookmark icon-->
+                <span class="bookmark">
+                Mar 11, 2019 - 3 min read &nbsp;<i class="fa">&#xf097;</i>
+            </span>
+            </div>
+
+            <!-- <div> to accomodate second portion of lower row-->
+            <div class="secondLower">
+                <p class="firstUpperContentHeading">Emoji Support</p>
+                <p class="firstUpperContentText">Emoji can be enabled by Hugo project in a number of ways.</p>
+                <!-- Use of <span> to font awesome to provide bookmark icon-->
+                <span class="bookmark">
+                Mar 11, 2019 - 3 min read &nbsp;<i class="fa">&#xf097;</i>
+            </span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

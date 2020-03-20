@@ -1,0 +1,1234 @@
+
+/* mixin to reuse properties and values for page footer section*/
+@mixin contactLinks($fontsize, $margintop, $color) {
+  font-size: $fontsize;
+  color: $color;
+  margin-top: $margintop;
+  position: relative;
+}
+
+body {
+    background-color: white;
+}
+
+.title {
+    margin-top: 50px;
+    width: 100%;
+    text-align: center;
+}
+
+hr {
+    border-top: 0.1px solid $grayfont;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: white;
+  }
+  
+  /* Use of nested selector in nav tag*/
+  li {
+    float: left;
+
+    a {
+      display: block;
+      color: black;
+      text-align: center;
+      padding: 1px 5px;
+      text-decoration: none;
+    }
+  }
+  
+  /* To select all <a> elements inside <li> element */
+  /* Use of padding and text-align properties to accomodate navigation text
+  li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 1px 5px;
+    text-decoration: none;
+  }*/
+  
+  
+  a {
+      text-decoration: none;
+      position: relative;
+  }
+
+  .menuone {
+    font-size: 11px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    margin: 10px 10px 10px 80px;
+    margin-bottom: 0px;
+    padding-bottom: 5px;
+    color: $grayfont;
+}
+
+.menutwo {
+    font-size: 11px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    margin: 10px 10px 10px 5px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    color: $grayfont;
+}
+
+.menuthree {
+    font-size: 11px;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    font-weight: bold;
+    margin: 5px 10px 10px 5px;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
+    color: White;
+    width: 120px;
+    height: 25px;
+    background: #74bdb2;
+    border-radius: 40px;
+    align-self: center;
+}
+
+.firstImage {
+  
+    width: 1350px;
+    height: 400px;
+    background-color: bisque;
+    background-image: url("../images/mainCleaning.jpg");
+}
+
+.imageTextdiv1 {
+    width: 1350px;
+    height: 400px;
+   
+}
+.imageText1 {
+    font-size: 28px;
+    color: $whitefont;
+    margin: 0px 600px 10px 150px;
+    padding-top: 100px;
+}
+
+.imageText2 {
+    font-size: 14px;
+    color: white;
+    margin: 20px 600px 10px 150px;
+   
+}
+
+.imageTextdivtwo {
+    width: 1200px;
+    height: 400px;
+}
+
+.circle {
+    width: 140px;
+    height: 40px;
+    border-radius: 70px;
+    font-size: 13px;
+    color: #74bdb2;
+    line-height: 40px;
+    text-align: center;
+    background: white;
+    margin: 20px 600px 10px 150px;
+  }
+
+.chooseUsone {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 100px;
+height: 100px;
+border-radius: 100px;
+line-height: 40px;
+justify-self: $justifySelf;
+text-align: center;
+background: #74bdb2;
+margin: 10px 10px 10px 10px;
+}
+
+.chooseUsoneTextOne {
+    margin: 130px 20px 30px 90px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+
+}
+
+/* Extending imgOneTextTwo class selector*/
+.chooseUsoneTextTwo {
+    margin: 160px 10px 30px 10px;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    @extend .imgOneTextTwo;
+}
+
+ .chooseUsone {
+        grid-column: 2 / 3;
+        grid-row: 2 / 3;
+        width: 100px;
+    height: 100px;
+    border-radius: 100px;
+    line-height: 40px;
+    justify-self: $justifySelf;
+    text-align: center;
+    background: #74bdb2;
+    margin: 10px 10px 10px 10px;
+  }
+
+.chooseUstwo {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 100px;
+height: 100px;
+border-radius: 100px;
+line-height: 40px;
+justify-self: $justifySelf;
+text-align: center;
+background: #74bdb2;
+margin: 10px 10px 10px 10px;
+}
+
+.chooseUstwoTextOne {
+    margin: 130px 20px 30px 80px;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    font-size: 16px;
+    color: #74bdb2;
+
+}
+
+/* Extending imgOneTextTwo class selector*/
+.chooseUstwoTextTwo {
+    margin: 160px 10px 30px 10px;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    @extend .imgOneTextTwo;
+}
+
+.chooseUsthree {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    width: 100px;
+height: 100px;
+border-radius: 100px;
+line-height: 40px;
+justify-self: $justifySelf;
+text-align: center;
+background: #74bdb2;
+margin: 10px 10px 10px 10px;
+}
+
+.chooseUsthreeTextOne {
+    margin: 130px 20px 30px 75px;
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    font-size: 16px;
+    color: #74bdb2;
+
+}
+
+/* Extending imgOneTextTwo class selector*/
+.chooseUsthreeTextTwo {
+    margin: 160px 10px 30px 10px;
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    @extend .imgOneTextTwo;
+}
+
+.Serviceheading {
+    grid-column: 1 / 7;
+    grid-row: 1 / 2;
+    justify-self: $justifySelf;
+    align-self: center;
+    font-size: 22px;
+    color: $LightBluecolor;
+    font-family: "Frutiger Neue W02 Book",Arial,Helvetica,sans-serif;
+}
+
+.ServiceheadingOneHead {
+    font-size: 16px;
+    color: $LightBluecolor;
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin: 5px 5px 5px 5px;
+}
+
+.ServiceImgOne {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin: 35px 5px 5px 5px;
+    width: 210px;
+    height: 150px;
+    background-image: url("../images/residentialCleaning.jpg")
+
+}
+
+.ServiceTextOne {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    margin: 200px 5px 5px 5px;
+    justify-self: left;
+    font-size: 13px;
+    color: $grayfont;
+}
+
+.ServiceheadingTwoHead {
+    font-size: 16px;
+    color: $LightBluecolor;
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    margin: 5px 5px 5px 5px;
+}
+
+.ServiceImgTwo {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    margin: 35px 5px 5px 5px;
+    width: 210px;
+    height: 150px;
+    background-image: url("../images/commercialCleaning.jpg");
+
+}
+
+.ServiceTextTwo {
+    grid-row: 2 / 3;
+    grid-column: 3 / 4;
+    margin: 200px 5px 5px 5px;
+    justify-self: left;
+    font-size: 13px;
+    color: $grayfont;
+}
+
+.ServiceheadingThreeHead {
+    font-size: 16px;
+    color: $LightBluecolor;
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    margin: 5px 5px 5px 5px;
+}
+
+.ServiceImgThree {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    margin: 35px 5px 5px 5px;
+    width: 210px;
+    height: 150px;
+    background-image: url("../images/officeCleaning.jpg");
+
+}
+
+.ServiceTextThree {
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    margin: 200px 5px 5px 5px;
+    justify-self: left;
+    font-size: 13px;
+    color: $grayfont;
+}
+
+.ServiceheadingFourHead {
+    font-size: 16px;
+    color: $LightBluecolor;
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    margin: 5px 5px 5px 5px;
+}
+
+.ServiceImgFour {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    margin: 35px 5px 5px 5px;
+    width: 210px;
+    height: 150px;
+    background-image: url("../images/seasonalCleaning.jpg");
+
+}
+
+.ServiceTextFour {
+    grid-row: 2 / 3;
+    grid-column: 5 / 6;
+    margin: 200px 5px 5px 5px;
+    justify-self: left;
+    font-size: 13px;
+    color: $grayfont;
+}
+
+.moreServiceBtn {
+    grid-column: 1 / 7;
+    grid-row: 3 / 4;
+    width: 140px;
+    height: 40px;
+    align-self: center;
+    justify-self: $justifySelf;
+    border-radius: 70px;
+    font-size: 13px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    background: #74bdb2;;
+    
+  }
+
+  .AboutImg {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+    margin: 35px 5px 5px 5px;
+    width: 400px;
+    height: 465px;
+    background-image: url("../images/aboutCompanyOne.png");
+    justify-self: right;
+  }
+
+  .AboutText {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    margin: 35px 5px 5px 5px;
+    width: 400px;
+    height: 590px;
+    justify-self: left;
+  }
+
+  .firstLine {
+      font-size: 14px;
+      margin: 5px 100px 5px 5px;
+  }
+
+  .secondLine {
+      font-size: 24px;
+      color: #74bdb2;
+      margin: 10px 10px 5px 5px;
+  }
+
+  .thirdLine {
+    font-size: 12px;
+    color: $grayfont;
+    margin: 10px 10px 5px 5px;
+}
+
+.firstAbout {
+    margin: 35px 10px 5px 5px;
+    height: 70px;
+    width: 390px;  
+    float: left;  
+}
+
+.imgOne {
+    height: 40px;
+    width: 40px;
+    position: relative;
+    float: left;
+}
+
+.textOne {
+    font-size: 16px;
+    position: relative;
+    height: 40px;
+    width: 390px;
+    float: right;
+    margin: 10px 10px 5px 10px;
+    padding-left: 20px;
+}
+
+.containerOne {
+    float: left;
+    margin-left: 5px;
+    width: 400px;
+    height: 75px;
+}
+
+.firstUpper {
+    float: left;
+    margin: 1px 0 0 1px;
+    width: 30px;
+    height: 30px;
+    border-width: thin;
+    position: relative;
+    padding-bottom: 1px;
+    background-image: url("../images/question-mark.png");
+    /*border: 1px solid;*/
+}
+
+.secondUpper {
+    float: left;
+    margin: 1px 0 0 15px;
+    width: 300px;
+    height: 17px;
+    position: relative;
+    padding-bottom: 1px;
+    font-size: 14px;
+    color:  #74bdb2;
+    
+    
+}
+
+.thirdUpper {
+    float: left;
+    margin: 1px 0 0 15px;
+    width: 300px;
+    height: 13px;
+    position: relative;
+    padding-bottom: 1px;
+    font-size: 10px;
+    color: $grayfont;
+}
+
+.moreInfoBtn {
+    margin-top: 200px;
+    margin-left: 10px;
+    width: 140px;
+    height: 40px;
+    border-radius: 70px;
+    font-size: 13px;
+    color: white;
+    line-height: 40px;
+    text-align: center;
+    background: #74bdb2;;
+    
+  }
+
+  .discountBtn {
+    
+    margin: 50px 30px 50px 30px;
+    width: 140px;
+    height: 40px;
+    border-radius: 70px;
+    font-size: 13px;
+    color: #74bdb2;
+    line-height: 40px;
+    text-align: center;
+    background: white;;
+    
+  }
+
+  .teamHeading {
+      font-size: 24px;
+      color: #74bdb2;
+      grid-row: 1 / 2;
+      grid-column: 1 / 6;
+      justify-self: $justifySelf;
+      align-self: center;
+  }
+
+  .imgOne {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    height: 160px;
+    width: 255px;
+        
+  }
+
+  .imageOne {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;        
+    background: #74bdb2;
+    background-image: url("../images/teamThree.jpg");
+    margin: 15px 30px 15px 70px;
+  }
+
+  .imgOneTextOne {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+    text-align: center;
+
+  }
+/* Using below class selector as inherited one in other class selector for reusability*/
+  .imgOneTextTwo {
+    font-size: 12px;
+    color: $grayfont;
+    text-align: center;
+  }
+
+  .imgTwo {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    height: 160px;
+    width: 255px;
+        
+  }
+
+  .imageTwo {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;        
+    background: #74bdb2;
+    background-image: url("../images/teamFour.jpg");
+    margin: 15px 30px 15px 70px;
+  }
+
+  .imgTwoTextOne {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+    text-align: center;
+
+  }
+
+  /* Extending imgOneTextTwo class selector*/
+  .imgTwoTextTwo {
+    @extend .imgOneTextTwo;
+  }
+
+  .imgThree {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    height: 160px;
+    width: 255px;
+        
+  }
+
+  .imageThree {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%;        
+    background: #74bdb2;
+    margin: 15px 30px 15px 70px;
+    background-image: url("../images/teamFive.jpg");
+  }
+
+  .imgThreeTextOne {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+    text-align: center;
+
+  }
+
+  /* Extending imgOneTextTwo class selector*/
+  .imgThreeTextTwo {
+    @extend .imgOneTextTwo;
+  }
+
+  .priceheading {
+    font-size: 24px;
+    color: #74bdb2;
+    grid-row: 1 / 2;
+    grid-column: 1 / 7;
+    justify-self: $justifySelf;
+    align-self: center;
+  }
+
+  .firstTable {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    background-color: white;
+  }
+
+  .firstTableHead {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .secondTable {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-color: white;
+  }
+
+  .secondTableHead {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .thirdTable {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-color: white;
+  }
+
+  .thirdTableHead {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .fourthTable {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+    background-color: white;
+  }
+
+  .fourthTableHead {
+    grid-column: 5 / 6;
+    grid-row: 2 / 3;
+    font-size: 16px;
+    color: #74bdb2;
+    text-align: center;
+    margin-top: 25px;
+  }
+
+  .firstTableHeadUl {
+    width: 25%;
+    border-top: 1px solid #e0dcdcd9;;
+  }
+
+  .firstTablePrice {
+      font-size: 24px;
+      text-align: center;
+      color: $grayfont;
+  }
+
+  /* Extending imgOneTextTwo class selector*/
+  .firstTablePriceDur {
+      @extend .imgOneTextTwo;
+  }
+
+  /* Extending imgOneTextTwo class selector*/
+  .firstTableDescLOne {
+    @extend .imgOneTextTwo;
+    margin-top: 5px;
+  }
+
+  .firstTableBuy{
+    font-size: 14px;
+    text-align: center;
+    justify-items: center;
+    padding-top: 8px;
+    height: 25px;
+    color: white;
+    background-color: #74bdb2;
+  }
+
+  .LatestBlogHeading {
+    font-size: 24px;
+    color: #74bdb2;
+    grid-row: 1 / 2;
+    grid-column: 1 / 6;
+    justify-self: $justifySelf;
+    align-self: center;
+  }
+
+/* Use of for loop to define grid width and height*/
+
+  .latestBlogImg-1 {
+      /*height: 150px;
+      width: 235px;*/
+      grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      background-image: url("../images/latestBlogOne.jpg")
+  }
+
+  .latestBlogImg-2 {
+    /*height: 150px;
+      width: 235px;*/
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    background-image: url("../images/latestBlogTwo.jpg")
+}
+
+.latestBlogImg-3 {
+    /*height: 150px;
+      width: 235px;*/
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    background-image: url("../images/latestBlogThree.jpg")
+}
+
+.latestBlogDateOne {
+    position: relative;
+    font-size: 10px;
+    color: $grayfont;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    position: relative;
+    height: 25px;
+    width: 235px;
+    margin: 160px 0 0 0px;
+}
+
+.latestBlogHeadOne {
+    position: relative;
+    font-size: 16px;
+    color: #74bdb2;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 190px 0 0 0;
+}
+
+/*
+.latestBlogText-1 {
+    position: relative;
+    font-size: 12px;
+    color: $grayfont;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    margin: 230px 0 0 0;
+}
+*/
+
+.latestBlogDateTwo {
+    position: relative;
+    font-size: 10px;
+    color: $grayfont;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    position: relative;
+    height: 25px;
+    width: 235px;
+    margin: 160px 0 0 0px;
+}
+
+.latestBlogHeadTwo {
+    position: relative;
+    font-size: 16px;
+    color: #74bdb2;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin: 190px 0 0 0;
+}
+
+/*.latestBlogText-2 {
+    position: relative;
+    font-size: 12px;
+    color: $grayfont;
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin: 230px 0 0 0;
+}*/
+
+.latestBlogDateThree {
+    position: relative;
+    font-size: 10px;
+    color: $grayfont;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    position: relative;
+    height: 25px;
+    width: 235px;
+    margin: 160px 0 0 0px;
+}
+
+.latestBlogHeadThree {
+    position: relative;
+    font-size: 16px;
+    color: #74bdb2;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    margin: 190px 0 0 0;
+}
+
+/*
+.latestBlogText-3 {
+    position: relative;
+    font-size: 12px;
+    color: $grayfont;
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    margin: 230px 0 0 0;
+}
+*/
+
+.latestBlogFooterOne {
+    height: 60px;
+    width: 235px;
+    grid-column: 2 / 3;
+      grid-row: 2 / 3;
+      margin: 290px 0 0 0;
+      position: relative;
+}
+
+.FooterIconOne {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    width: 35px;
+height: 35px;
+border-radius: 100px;
+justify-self: $justifySelf;
+text-align: center;
+background: $grayfont;
+margin: 2px 2px 2px 2px;
+}
+
+.FooterTextOne {
+    position: relative;
+    height: 35px;
+    width: 200px;
+    font-size: 12px;
+    justify-content: left;
+    padding-top: 10px;
+    margin-left: 0px;
+}
+
+.latestBlogFooterTwo {
+    height: 60px;
+    width: 235px;
+    grid-column: 3 / 4;
+      grid-row: 2 / 3;
+      margin: 290px 0 0 0;
+      position: relative;
+}
+
+.FooterIconTwo {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    width: 35px;
+height: 35px;
+border-radius: 100px;
+justify-self: $justifySelf;
+text-align: center;
+background: $grayfont;
+margin: 2px 2px 2px 2px;
+}
+
+.FooterTextTwo {
+    position: relative;
+    height: 35px;
+    width: 200px;
+    font-size: 12px;
+    justify-content: left;
+    padding-top: 10px;
+    margin-left: 0px;
+}
+
+.latestBlogFooterThree {
+    height: 60px;
+    width: 235px;
+    grid-column: 4 / 5;
+      grid-row: 2 / 3;
+      margin: 290px 0 0 0;
+      position: relative;
+}
+
+.FooterIconThree {
+    grid-column: 4 / 5;
+    grid-row: 2 / 3;
+    width: 35px;
+height: 35px;
+border-radius: 100px;
+justify-self: $justifySelf;
+text-align: center;
+background: $grayfont;
+margin: 2px 2px 2px 2px;
+}
+
+.FooterTextThree {
+    position: relative;
+    height: 35px;
+    width: 200px;
+    font-size: 12px;
+    justify-content: left;
+    padding-top: 10px;
+    margin-left: 0px;
+}
+
+.testimonialHeader {
+    grid-row: 1 / 2;
+    grid-column: 1 / 4;
+    font-size: 24px;
+    color: #74bdb2;
+    justify-self: $justifySelf;
+    align-self: center;
+}
+
+.testimonialImage {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    align-self: center;
+    justify-self: $justifySelf;
+    display: inline-block;
+    width: 125px;
+    height: 125px;
+    background-position: 50% 50%;
+    background-size: cover;
+    border-radius: 50%; 
+    background-image: url("../images/testimonial.jpg");
+    margin: 15px 30px 15px 70px;
+}
+
+.testimonialText {
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    /*align-self: center;*/
+    justify-self: $justifySelf;
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+.testimonialSign {
+    text-align: center;
+    position: relative;
+    justify-self: $justifySelf;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    margin-top: 100px;
+    height: 35px;
+    width: 300px;
+    background-color: #74bdb2;
+    color: white;
+    padding-bottom: 10px;
+
+}
+
+.projects {
+    height: 100px;
+    width: 1300px;
+    color: #74bdb2;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 40px; 
+}
+
+.getQuote {
+  margin-top: 50px;
+  height: 390px;
+  width: 310px;
+  background-color: white;
+  grid-column: 2 / 3;
+    grid-row: 1 / 2;
+}
+
+.quoteHead {
+  font-size: 20px;
+  color: #74bdb2;
+  text-align: center;
+  margin-top: 25px;
+
+}
+
+.name {
+ 
+  text-align: center;
+}
+
+.nameText {
+  color: $grayfont;
+  background-color: lightgray;
+  width: 230px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.messageText {
+  color: $grayfont;
+  background-color: lightgray;
+  width: 230px;
+  height: 70px;
+  margin-top: 15px;
+}
+
+.submitText {
+  color: white;
+  background-color: #74bdb2;
+  width: 230px;
+  height: 30px;
+  margin-top: 15px;
+}
+
+.cleanNow {
+  @include contactLinks(20px, 50px, #74bdb2); 
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+
+}
+
+.cleanNowText {
+  @include contactLinks(12px, 80px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+}
+
+.cleanNowFooter {
+  @include contactLinks(10px, 150px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
+  
+}
+
+.quickView {
+  @include contactLinks(12px, 50px, gray); 
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+.viewLinksOne {
+  @include contactLinks(10px, 85px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+.viewLinksTwo {
+  @include contactLinks(10px, 100px, gray); 
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+.viewLinksThree {
+  @include contactLinks(10px, 115px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+.viewLinksFour {
+  @include contactLinks(10px, 130px, gray); 
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+}
+
+.viewLinksFive {
+  @include contactLinks(10px, 145px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 3 / 4;
+  
+}
+
+.services {
+  @include contactLinks(12px, 50px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+.serviceLinksOne {
+  @include contactLinks(10px, 85px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+.serviceLinksTwo {
+  @include contactLinks(10px, 100px, gray); 
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+.serviceLinksThree {
+  @include contactLinks(10px, 115px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+.serviceLinksFour {
+  @include contactLinks(10px, 130px, gray); 
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+}
+
+.serviceLinksFive {
+  @include contactLinks(10px, 145px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 4 / 5;
+  
+}
+
+.contact {
+  @include contactLinks(12px, 50px, gray); 
+  grid-row: 1 / 2;
+  grid-column: 5 / 6;
+}
+
+.contactLinksOne {
+  @include contactLinks(10px, 85px, $grayfont); 
+  grid-row: 1 / 2;
+  grid-column: 5 / 6;
+}
+
+.contactLinksTwo {
+  @include contactLinks(10px, 100px, gray); 
+  grid-row: 1 / 2;
+  grid-column: 5 / 6;
+}
+
+.contactLinksThree {
+  @include contactLinks(10px, 115px, $grayfont);
+   grid-column: 5 / 6; 
+   grid-row: 1 / 2;
+}
+
+.material-icons {
+  margin-top: 28px;
+  font-size: 40px;
+  color: white;
+  background-color: #74bdb2;
+}
+
+
+
+.material-iconsOne {
+  background-color: #74bdb2;
+  color: white;
+}
+
+.imageSliderOne {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  background-image: url("../images/cleaningServiceOne.jpg");
+  height: 180px;
+  width: 340px;
+}
+
+.imageSliderTwo {
+  grid-column: 2 / 3;
+  grid-row: 1 / 2;
+  background-image: url("../images/cleaningServiceTwo.jpg");
+  height: 180px;
+  width: 340px;
+}
+
+.imageSliderThree {
+  grid-column: 3 / 4;
+  grid-row: 1 / 2;
+  background-image: url("../images/cleaningServiceThree.jpg");
+  height: 180px;
+  width: 340px;
+}
+.imageSliderFour {
+  grid-column: 4 / 5;
+  grid-row: 1 / 2;
+  background-image: url("../images/cleaningServiceFour.jpg");
+  height: 180px;
+  width: 360px;
+}
+
+.hiperlink {
+  font-size: 10px;
+    color: gray;
+}
+
+a:visited {color:gray;}
+
+.buyNow {
+    font-size: 14px;
+    color: white; 
+}
+
+a.colorVisit:visited {
+  color:white;
+}
+
+a.buyNow:visited {
+  color:white;
+}

@@ -1,0 +1,13 @@
+<button id="btn" (click) = "this.isShown = ! this.isShown">Add new item</button>
+<br>
+<br>
+<div>
+<!--Create a form with fields required to create ToDo item to accept user input-->
+<form name = "toDoForm" *ngIf="isShown" class="form" (ngSubmit)="onSubmit()">
+        <input type="text" name="title" [(ngModel)]="title" placeholder="Title"><br><br>
+        
+        <textarea name="desc" [(ngModel)]="desc" placeholder="Description"></textarea><br><br>
+        <input type="datetime-local" name="dueDate" [(ngModel)]="dueDate" placeholder="Due date"><br><br>
+        <input type="submit" value="Submit" class="btn"><br><br>
+      </form>
+</div>
